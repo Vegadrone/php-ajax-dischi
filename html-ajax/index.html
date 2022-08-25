@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
     <!-- IMPORT AXIOS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
         integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -27,7 +28,12 @@
            <h1>Header</h1>
         </header>
         <main>
-            <div class="card-wrapper d-flex flex-wrap">
+            <ul>
+                <li v-for="disk in disks">
+                    {{disk.title}}
+                </li>
+            </ul>
+            <!-- <div class="card-wrapper d-flex flex-wrap">
                 <div class="card m-2" style="width: 18rem;">
                     <img class="p-2" src="https://m.media-amazon.com/images/I/81Rvhc9VgiL._AC_SX466_.jpg" class="card-img-top"
                         alt="...">
@@ -36,7 +42,7 @@
                         <h6>Artist</h6>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </main>
     </div>
     
