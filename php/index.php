@@ -15,18 +15,21 @@
 </head>
 
 <body>
+    <?php include '../db.php' ?>
     <header>
         <h1>Header</h1>
     </header>
     <main>
         <div class="card-wrapper d-flex flex-wrap">
-            <div class="card m-2" style="width: 18rem;">
-                <img class="p-2" src="https://m.media-amazon.com/images/I/81Rvhc9VgiL._AC_SX466_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4>Title</h4>
-                    <h6>Artist</h6>
+            <?php foreach ($disks as $disk) { ?>
+                <div class="card m-2" style="width: 18rem;">
+                    <img class="p-2" src="<?php echo $disk['poster']; ?>" class="card-img-top" alt="<?php echo $disk['title']; ?>">
+                    <div class="card-body">
+                        <h4><?php echo $disk['title']; ?></h4>
+                        <h6><?php echo $disk['author']; ?></h6>
+                    </div>
                 </div>
-            </div>
+            <?php } ?>
         </div>
     </main>
 </body>
