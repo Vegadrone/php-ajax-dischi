@@ -17,16 +17,17 @@
 <body>
     <?php include '../db.php' ?>
     <header>
-        <h1>Header</h1>
+        <img src="../assets/spotify-logo.png" alt="logo">
     </header>
     <main>
-        <div class="card-wrapper d-flex flex-wrap">
+        <div class="card-wrapper d-flex flex-wrap py-3">
             <?php foreach ($disks as $disk) { ?>
                 <div class="card m-2" style="width: 18rem;">
                     <img class="p-2" src="<?php echo $disk['poster']; ?>" class="card-img-top" alt="<?php echo $disk['title']; ?>">
                     <div class="card-body">
-                        <h4><?php echo $disk['title']; ?></h4>
-                        <h6><?php echo $disk['author']; ?></h6>
+                        <h4 class="text-center text-light fw-bold"><?php echo $disk['title']; ?></h4>
+                        <h6 class="text-center text-light fw-semibold"><?php echo $disk['author']; ?></h6>
+                        <h6 class="text-center text-light"><?php echo $disk['year']; ?></h6>
                     </div>
                 </div>
             <?php } ?>

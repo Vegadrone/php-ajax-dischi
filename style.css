@@ -1,4 +1,22 @@
+body {
+    background-color: #1e2d3b;
+}
+
+header{
+    width: 100%;
+    background-color: #404e5d;
+}
+
+header img{
+    width: 100px;
+    padding: 0.5rem;
+}
+
 .card-wrapper{
     width: 80%;
     margin: 0 auto;
+}
+
+.card{
+    background-color: #404e5d;
 }

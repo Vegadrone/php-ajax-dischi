@@ -25,17 +25,17 @@
 <body>
     <div id="app">
         <header>
-           <h1>Header</h1>
+           <img src="../assets/spotify-logo.png" alt="logo">
         </header>
         <main>
-            <div class="card-wrapper d-flex flex-wrap">
+            <div class="card-wrapper d-flex flex-wrap py-3">
                 <div class="card m-2" style="width: 18rem;" v-for="disk in disks">
                     <img class="p-2" :src="disk.poster" class="card-img-top"
                         :alt="disk.title">
                     <div class="card-body">
-                        <h4>{{disk.title}}</h4>
-                        <h6>{{disk.author}}</h6>
-                        <h6>{{disk.year}}</h6>
+                        <h4 class="text-center text-light fw-bold">{{disk.title}}</h4>
+                        <h6 class="text-center text-light fw-semibold">{{disk.author}}</h6>
+                        <h6 class="text-center text-light">{{disk.year}}</h6>
                     </div>
                 </div>
             </div>
