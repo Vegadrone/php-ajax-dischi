@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <?php include '../db.php' ?>
+    <?php require_once __DIR__ . '/../db.php' ?>
     <header>
         <img src="../assets/spotify-logo.png" alt="logo">
     </header>

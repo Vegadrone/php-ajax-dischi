@@ -10,6 +10,9 @@ constapp = new Vue({
                 this.disks = result.data;
                 console.log(this.disks);
             })
+            .catch((error)=>{
+                console.error(error);
+            })
         },
     },
 
